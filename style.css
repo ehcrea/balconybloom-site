@@ -50,6 +50,12 @@ h1, h2, h3 { font-family: var(--display); font-weight: 600; line-height: 1.15; t
 
 /* Footer */
 .footer { padding: 28px 0 40px; border-top: 1px solid var(--line); color: var(--muted); font-size: 15px; }
+/* Social links: round icon buttons in their own row above the page links */
+.social { display: flex; gap: 12px; margin: 0 0 18px; }
+.social a { display: grid; place-items: center; width: 44px; height: 44px; border-radius: 50%; color: var(--muted); border: 1px solid var(--line); background: var(--surface); text-decoration: none; transition: color .15s, border-color .15s; }
+.social a:hover, .social a:focus-visible { color: var(--green-deep); border-color: var(--green); }
+.social svg { width: 20px; height: 20px; }
+.page .social { margin: 22px 0 4px; }
 .footer-inner { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
 .footer nav { display: flex; gap: 18px; }
 :focus-visible { outline: 3px solid var(--sun); outline-offset: 2px; }
